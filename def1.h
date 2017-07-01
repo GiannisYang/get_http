@@ -18,7 +18,7 @@ struct ip_header {
 #else
 	u_int8_t		ip_header_length : 4, ip_version : 4;
 #endif
-	u_int8_t		ip_tos_taowenliu;/* 服务质量 */
+	u_int8_t		ip_tos;/* 服务质量 */
 	u_int16_t		ip_length;/* 总长度 */
 	u_int16_t		ip_id;/* 标识 */
 	u_int16_t		ip_off;/* 偏移 */

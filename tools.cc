@@ -36,6 +36,16 @@ u_char *get_loc_ip() {
     return NULL;
 }
 
+int get_num(const u_char* p, const char terminator) {
+    int num = 0;
+    const u_char* c = p;
+    while(*c != terminator) {
+        if(*c >= '0' && *c <= '9')
+            num = num * 10 + (int)(*c) - 48;
+        c++;
+    }
+    return num;
+}
 
 
 #endif
