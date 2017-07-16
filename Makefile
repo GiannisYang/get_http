@@ -1,17 +1,24 @@
-defs = def0.h def1.h tools.h
-obj = main.o tools.o
+CC = g++
+LDFLAGS = -lpcap -lz -lpthread
+CCFLAGS =
+
+defs = def0.h \
+	   def1.h \
+	   tools.h \
+	   html_content.h
+
+objs = main.o \
+	   tools.o \
+	   html_content.o
 
 all : run
-run : $(obj)
-	g++ $(obj) -o run -lpcap
+run : $(objs)
+	$(CC) $(objs) -o run $(LDFLAGS)
 
-main.o : main.cc $(defs)
-	g++ -c main.cc -lpcap
-
-tools.o : main.cc $(defs)
-	g++ -c tools.cc
+$(objs) : %.o: %.cc $(defs)
+	$(CC) -c $(CCFLAGS) $< -o $@
 
 
-
+.PHONY : clean
 clean:
-	rm run *.o
+	-rm run *.o

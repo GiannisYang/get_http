@@ -33,7 +33,7 @@ struct tcp_header {
 	u_int16_t	tcp_source_port;
 	u_int16_t	tcp_destination_port;
 
-	u_int32_t	tcp_acknowledgement;/* 序列号 */
+	u_int32_t	tcp_sequence;/* 序列号 */
 	u_int32_t	tcp_ack;/* 确认号 */
 #ifdef WORDS_BIGENDIAN
 	u_int8_t	tcp_offset : 4,
@@ -55,5 +55,7 @@ struct tcp_header {
 	u_int16_t	tcp_checksum;/* 校验和 */
 	u_int16_t	tcp_urgent_pointer;/* 紧急指针 */
 };
+
+class html_content;
 
 #endif

@@ -3,13 +3,14 @@
 	"def1.h"
 	"tools.h"
 
-1498743404 /home/carmelo/myCode/get_http/def1.h
+1498963692 /home/carmelo/myCode/get_http/def1.h
 	"def0.h"
 
-1498744898 /home/carmelo/myCode/get_http/def0.h
+1498982808 /home/carmelo/myCode/get_http/def0.h
 	<iostream>
 	<string.h>
 	<sys/types.h>
+	<sys/stat.h>
 	<sys/socket.h>
 	<netinet/in.h>
 	<unistd.h>
@@ -20,10 +21,15 @@
 	<errno.h>
 	<pcap.h>
 	<ifaddrs.h>
+	<zlib.h>
+	<list>
+	<time.h>
+	<sys/time.h>
+	<fcntl.h>
 
-1498745022 /home/carmelo/myCode/get_http/tools.h
+1498890904 /home/carmelo/myCode/get_http/tools.h
 	"def1.h"
 
-1498745747 source:/home/carmelo/myCode/get_http/tools.cc
+1498890872 source:/home/carmelo/myCode/get_http/tools.cc
 	"tools.h"
 

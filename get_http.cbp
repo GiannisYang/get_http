@@ -34,7 +34,10 @@
 		</Compiler>
 		<Unit filename="def0.h" />
 		<Unit filename="def1.h" />
+		<Unit filename="html_content.cc" />
+		<Unit filename="html_content.h" />
 		<Unit filename="main.cc" />
+		<Unit filename="min_heap.h" />
 		<Unit filename="tools.cc" />
 		<Unit filename="tools.h" />
 		<Extensions>
